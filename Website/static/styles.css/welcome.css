@@ -1,0 +1,354 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden; 
+}
+
+main {
+  transition: opacity 0.3s ease;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+nav{
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+#resources-btn{
+  margin-left: auto;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav ul li a.active {
+  background-color: #fff;
+  color: #333;
+  border-radius: 5px;
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+#hero {
+  background-image: url("https://www.shutterstock.com/image-illustration/bookshelves-library-old-books-3d-260nw-1530516716.jpg");
+  background-size: cover;
+  background-position: center; 
+  padding: 50px;
+  text-align: center;
+  height: 100px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+#sat-welcome, #sat-text{
+  color: white;
+}
+#hero h1 {
+  font-size: 36px;
+}
+h2{
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+
+}
+.h2-hr-1{
+  border-top: 2px dotted black;
+  width: 8%;
+  margin-right: 95%;
+
+}
+.h2-hr-2{
+  border-top: 2px dotted black;
+  width: 12.5%;
+  margin-right: 90%;
+}
+.h2-container{
+  transition: margin-bottom .5s ease;
+}
+.h2-container:hover{
+margin-bottom: 40px;
+}
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+#location {
+  margin-top: 50px;
+}
+
+#about h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+#location p {
+  line-height: 1.5;
+}
+
+#resources {
+  margin-top: 50px;
+}
+
+#resources h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+#resources ul {
+  list-style: none;
+  padding: 0;
+}
+
+#resources ul li {
+  margin-bottom: 10px;
+}
+
+#contact {
+  margin-top: 50px;
+}
+
+#contact h1 {
+  font-size: 36px;
+  color: #333;
+}
+
+#contact p {
+  line-height: 1.5;
+}
+
+form {
+  margin-top: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+form textarea {
+  height: 150px;
+}
+
+form input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#tutor {
+  margin-top: 50px;
+}
+
+#tutor h1 {
+  font-size: 36px;
+  color: #333;
+}
+
+#tutor p {
+  line-height: 1.5;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn{
+  padding-right: 100px;
+}
+
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 8px 0;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s ease; 
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  opacity: 1; 
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 8px 0;
+  text-decoration: none;
+  display: block;
+  transition: color 0.3s ease; 
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  color: #4CAF50; 
+  transform: scale(1.1);
+}
+.thank-you {
+  text-align: center;
+}
+@media only screen and (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+
+  nav ul li a {
+    padding: 5px;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  #hero {
+    padding: 30px;
+  }
+
+  #hero h1 {
+    font-size: 24px;
+  }
+
+  .cta-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  #about {
+    margin-top: 30px;
+  }
+
+  #about h2 {
+    font-size: 20px;
+  }
+
+  #resources {
+    margin-top: 30px;
+  }
+
+  #resources h2 {
+    font-size: 20px;
+  }
+
+  #contact {
+    margin-top: 30px;
+  }
+
+  #contact h1 {
+    font-size: 24px;
+  }
+
+  form label {
+    font-size: 14px;
+  }
+
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  form textarea {
+    height: 100px;
+  }
+
+  form input[type="submit"] {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  #tutor {
+    margin-top: 30px;
+  }
+
+  #tutor h1 {
+    font-size: 24px;
+  }
+
+  #tutor p {
+    font-size: 14px;
+  }
+}

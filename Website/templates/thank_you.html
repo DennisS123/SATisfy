@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAT Club | Become a Tutor</title>
+  <link rel="stylesheet" href="{{url_for('static',filename='styles.css/welcome.css')}}">
+
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="{{url_for('views.home')}}" class="active">Home</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Menu &#9660;</a>
+          <div class="dropdown-content">
+            <a href="{{url_for('views.home')}}">About Us</a>
+            <a href="{{url_for('views.resources')}}">Free Resources</a>
+            <a href="{{url_for('views.tutor')}}">Become a Tutor</a>
+            <a href="{{url_for('views.contact')}}">Contact Us</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <h1 class="thank-you">Thank You!</h1>
+  <p class="thank-you">Your message has been successfully submitted. We will get back to you soon.</p>
+  <script src="{{url_for('static',filename='script.js/script.js')}}"></script>
+</body>
+</html>

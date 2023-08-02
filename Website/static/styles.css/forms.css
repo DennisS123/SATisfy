@@ -1,0 +1,60 @@
+
+#tutor form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+#tutor form input[type="text"],
+#tutor form input[type="email"],
+#tutor form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+#tutor form input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#tutor form input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Contact Form */
+#contact form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+#contact form input[type="text"],
+#contact form input[type="email"],
+#contact form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+#contact form input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#contact form input[type="submit"]:hover {
+  background-color: #45a049;
+}
+

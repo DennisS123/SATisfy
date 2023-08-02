@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAT Club | Home</title>
+  <link rel="stylesheet" href="{{url_for('static',filename='styles.css/welcome.css')}}">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="{{url_for('views.home')}}" class="active">Home</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Menu &#9660;</a>
+          <div class="dropdown-content">
+            <a href="{{url_for('views.about_us')}}">About Us</a>
+            <a href="{{url_for('views.resources')}}">Free Resources</a>
+            <a href="{{url_for('views.tutor')}}">Become a Tutor</a>
+            <a href="{{url_for('views.contact')}}">Contact Us</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="hero">
+      <h1 id="sat-welcome">Welcome to the SAT Club</h1>
+      <p id="sat-text">Preparing students for success on the SAT exam</p>
+      <a href="{{url_for('views.tutor')}}" class="cta-button">Join our team of tutors</a>
+    </section>
+    
+    <section id="about">
+      <div class="h2-container">
+          <h2>Location</h2>
+          <hr class ="h2-hr-1"/>
+      </div>
+      <p>
+        We will hold tutoring sessions every week. During the summer, sessions will be held online. During the school year, come to room 287 on Fridays from 2:30 pm - 4:00 pm. Thank You!
+      </p>
+    </section>
+    
+    <section id="resources">
+      <div class="h2-container">
+        <h2>Free Resources</h2>
+        <hr class ="h2-hr-2"/>
+      </div>
+      <p>Explore our collection of free SAT preparation resources:</p>
+      <ul>
+        <li><a href="{{ url_for('views.math') }}">SAT Math Advanced Guide and Workbook</a></li>
+        <li><a href="{{ url_for('views.reading') }}">Reading Strategies and Tips</a></li>
+        <li><a href="{{ url_for('views.grammar') }}">Grammar Prep Book by Erica Meltzer</a></li>
+      </ul>
+    </section>
+  </main>
+  
+  <footer>
+    <p> 2023 Susan E. Wagner SAT Club &copy;</p>
+  </footer>
+  <script src="{{url_for('static',filename='script.js/script.js')}}"></script>
+</body>
+</html>
