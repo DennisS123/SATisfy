@@ -1,2 +1,3 @@
 # SAT-Club-Website
-A website for my school's SAT Club.
+Programmed using HTML, CSS, JavaScript, Python, Flask, and JSON.
+Stores club info via database allowing users to contact officials.
