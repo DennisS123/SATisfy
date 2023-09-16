@@ -7,7 +7,7 @@ from email.mime.text import MIMEText
 views = Blueprint(__name__, "views")
 @views.route("/")
 def home():
-    return render_template("welcome.html")
+    return render_template("index.html")
 
 @views.route("/resources")
 def resources():
