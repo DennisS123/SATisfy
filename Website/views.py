@@ -36,7 +36,7 @@ def grammar():
     return render_template("writing.html")
 @views.route("/about_us")
 def about_us():
-    return render_template("about_us.html")
+    return render_template("index.html")
 
 
 @views.route("/contact", methods=["POST"])
